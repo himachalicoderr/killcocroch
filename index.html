@@ -6,17 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="/css/style.css" type="stylesheet/css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Kill Cocroch</title>
 </head>
 
 <body>
     <section class="gameblock">
-        <div class="gamescene">
-            <img class="cocroch" id="cocrochi" src="">\
-            dajshkfhshfhsdhfhsdfhsdfhsdhj
+        <div class="gamecanvas">
+            <div id="startscreen"><button onclick="startGame()">Start Game</button></div>
+            <div class="gameinfo">
+                <h5>Your Score : <span id="gamescore">0</span></h5>
+                <h5>You Killed <span id="killcocroches">0</span> Cocroches!</h5>
+            </div>
+            <div class="gamescene">
+                <div class="cocroch" id="killcocroch" onclick="killme()"></div>
+                </div>
         </div>
     </section>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/javascript.js"></script>
 </body>
 
 </html>
